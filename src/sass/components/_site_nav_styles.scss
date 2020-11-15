@@ -1,0 +1,112 @@
+.is-open{
+    visibility: visible;
+      opacity: 1;
+}
+.is-hidden{
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    cursor: none;
+}
+header{
+    @media screen and(min-width: 768px) and (max-width: 1440px){
+        height: 90px;
+        .site-nav{
+            padding-top: 33px;
+        }
+    }
+
+    @media screen and(max-width:767px){
+        position: relative;
+        .js-menu-button{
+            position: absolute;
+            top: 68px;
+            right: 30px;
+           background-color: white;
+           border: none;
+           cursor: pointer;
+            svg{
+              background-size: contain;
+              width: 33px;
+              height: 20px;  
+              fill:currentColor ;
+            
+            }
+           
+        }
+
+      .site-nav{ 
+           min-width: 375px;
+        min-height: 812px;
+        background-color: rosybrown;
+      }
+     
+
+      .language-notification{
+         position: absolute;
+         bottom: 57px;
+         right: 28px;
+         transform: rotate(90deg);
+
+        font-family: Khula, sans-serif;
+        font-weight: 700;
+       font-size: 34px;
+        line-height: 42px;
+    .ru-color-mod{
+    color:#828282;
+            }
+    }
+}
+}
+
+
+       
+
+
+.menu{
+    @media screen and(min-width: 768px) and (max-width: 1440px) {
+        display: flex;
+        justify-content: space-around;
+        margin-top: 0;
+        margin-bottom: 0;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0;
+        outline: 1px solid tomato;
+
+    }
+    @media screen and(max-width:767px){
+        margin: 0;
+        display: flex;
+        flex-direction: column;
+      .menu-item{
+          &:first-child{
+              margin-top: 66px;
+          }
+          &:nth-child(-n+4){
+              margin-bottom: 68px;
+          }
+      }
+    }
+}
+.js-menu-button{
+    @media screen and(min-width: 768px) and (max-width:1440px){
+        visibility: hidden;
+        opacity: 0;
+    }
+}
+// .close-button{
+//     visibility: hidden;
+//     opacity: 1;
+//     cursor: none;
+// }
+
+
+
+
+
+.container{
+    outline: 1px solid yellow;
+}
+
+
