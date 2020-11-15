@@ -3,6 +3,7 @@
       opacity: 1;
 }
 .is-hidden{
+    display: none;
     visibility: hidden;
     opacity: 0;
     pointer-events: none;
@@ -21,7 +22,7 @@ header{
         .js-menu-button{
             position: absolute;
             top: 68px;
-            right: 30px;
+            right: 60px;
            background-color: white;
            border: none;
            cursor: pointer;
