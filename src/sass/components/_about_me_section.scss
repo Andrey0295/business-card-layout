@@ -1,3 +1,5 @@
+// ! ! ! Стиллизация секции!! ! !
+
 .about-me{
     background-color: #f6f6f6;
     text-align: center;
@@ -11,24 +13,32 @@
          margin-top: 105px;
     }
 }
+
+
+
+
+
+// Стиллизыция бокса с текстомю...!....!.....!
+
+
 .about-me-box{
     @media screen and(max-width: 767px){
         min-width: 316px;
         h2{
-            margin-top: 80px;
+            padding-top: 80px;
         }
         &:last-child{
-            margin-bottom: 80px;
+            padding-bottom: 80px;
         }
 
     }
     @media screen and(min-width: 768px){
         min-width: 485px;
         h2{
-            margin-top: 120px;
+            padding-top: 120px;
         }
         :last-child{
-            margin-bottom: 90px;
+            padding-bottom: 90px;
         }
     }
    

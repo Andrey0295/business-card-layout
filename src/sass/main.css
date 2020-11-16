@@ -511,10 +511,10 @@ p {
     min-width: 316px;
   }
   .about-me-box h2 {
-    margin-top: 80px;
+    padding-top: 80px;
   }
   .about-me-box:last-child {
-    margin-bottom: 80px;
+    padding-bottom: 80px;
   }
 }
 
@@ -523,14 +523,28 @@ p {
     min-width: 485px;
   }
   .about-me-box h2 {
-    margin-top: 120px;
+    padding-top: 120px;
   }
   .about-me-box :last-child {
-    margin-bottom: 90px;
+    padding-bottom: 90px;
   }
 }
 
 .about-me-box p {
   margin-top: 30px;
+}
+
+.main-skill-icon {
+  width: 89px;
+  height: 89px;
+}
+
+.star {
+  width: 26px;
+  height: 26px;
+}
+
+.white-star {
+  fill: #e5e5e5;
 }
 /*# sourceMappingURL=main.css.map */
