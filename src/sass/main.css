@@ -253,16 +253,32 @@ summary {
   display: list-item;
 }
 
-.container {
-  max-width: 768px;
-  padding-right: 15px;
-  padding-left: 15px;
+html, body {
+  /* Убирает прокрутку по горизонтале, для мобильной версии */
+  overflow-x: hidden;
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (max-width: 767px) {
   .container {
-    max-width: 1440px;
+    min-width: 440px;
+    padding-right: 30px;
+    padding-left: 30px;
   }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: auto;
+    padding-right: 200px;
+    padding-left: 200px;
+  }
+}
+
+h1,
+h2,
+p {
+  margin: 0px;
+  padding: 0px;
 }
 
 .list {
@@ -292,20 +308,43 @@ summary {
   opacity: 1;
 }
 
-.is-hidden {
-  display: none;
-  visibility: hidden;
-  opacity: 0;
-  pointer-events: none;
-  cursor: none;
+@media screen and (max-width: 767px) {
+  .is-hidden {
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    cursor: none;
+  }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) {
   header {
     height: 90px;
   }
   header .site-nav {
     padding-top: 33px;
+  }
+  header .site-nav .line {
+    position: relative;
+    top: 32px;
+    max-width: 100%;
+    height: 2px;
+    background-color: #828282;
+  }
+  header .language-notification {
+    position: absolute;
+    top: 157px;
+    right: 155px;
+    -webkit-transform: rotate(90deg);
+            transform: rotate(90deg);
+    font-family: Khula, sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 20px;
+  }
+  header .language-notification .ru-color-mod {
+    color: #828282;
   }
 }
 
@@ -330,7 +369,8 @@ summary {
   header .site-nav {
     min-width: 375px;
     min-height: 812px;
-    background-color: rosybrown;
+    border: 2px solid rgba(130, 130, 130, 0.1);
+    border-top: none;
   }
   header .language-notification {
     position: absolute;
@@ -348,7 +388,7 @@ summary {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) {
   .menu {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -360,7 +400,6 @@ summary {
     margin-left: auto;
     margin-right: auto;
     padding: 0;
-    outline: 1px solid tomato;
   }
 }
 
@@ -383,14 +422,115 @@ summary {
   }
 }
 
-@media screen and (min-width: 768px) and (max-width: 1440px) {
+@media screen and (min-width: 768px) {
   .js-menu-button {
     visibility: hidden;
     opacity: 0;
   }
 }
 
-.container {
-  outline: 1px solid yellow;
+@media screen and (min-width: 768px) {
+  .section-hero {
+    position: relative;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .hero-title {
+    padding-top: 70px;
+    font-size: 47px;
+    line-height: 58px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero-title {
+    margin-top: 40px;
+    font-size: 47.3392px;
+    line-height: 59px;
+  }
+}
+
+.specialization {
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@media screen and (max-width: 767px) {
+  .specialization {
+    margin-top: 25px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .specialization {
+    position: absolute;
+    top: 15%;
+    left: 45%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .box {
+    margin-top: 40px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .box {
+    margin-top: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.about-me {
+  background-color: #f6f6f6;
+  text-align: center;
+  margin-bottom: 150px;
+}
+
+@media screen and (max-width: 767px) {
+  .about-me {
+    margin-top: 85px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-me {
+    margin-top: 105px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .about-me-box {
+    min-width: 316px;
+  }
+  .about-me-box h2 {
+    margin-top: 80px;
+  }
+  .about-me-box:last-child {
+    margin-bottom: 80px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about-me-box {
+    min-width: 485px;
+  }
+  .about-me-box h2 {
+    margin-top: 120px;
+  }
+  .about-me-box :last-child {
+    margin-bottom: 90px;
+  }
+}
+
+.about-me-box p {
+  margin-top: 30px;
 }
 /*# sourceMappingURL=main.css.map */

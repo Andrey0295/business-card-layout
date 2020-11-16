@@ -1,11 +1,31 @@
+
+html, body {
+    /* Убирает прокрутку по горизонтале, для мобильной версии */
+    overflow-x: hidden;
+}
 .container{
-    max-width:768px;
-    padding-right: 15px;
-    padding-left: 15px;
-    @media screen and (min-width: 768px) and (max-width: 1440px){
-        max-width: 1440px ;
+    @media screen and(max-width:767px){
+        min-width: 440px;
+        padding-right: 30px;
+    padding-left: 30px;
+    }
+    // background-size: contain;
+    // max-width:768px;
+    
+    @media screen and (min-width: 768px) {
+        width: auto; ;
+        padding-right: 200px;
+    padding-left: 200px;
+    
     }
 }
+h1,
+h2,
+p{
+    margin:0px;
+    padding:0px;
+}
+
 .list{
     list-style: none;
 }
@@ -23,5 +43,22 @@ font-size: 34px;
 line-height: 42px;
     
 }
+}
+
+
+
+.is-open{
+    visibility: visible;
+      opacity: 1;
+}
+.is-hidden{
+    @media screen and(max-width:767px){
+        display: none;
+    visibility: hidden;
+    opacity: 0;
+    pointer-events: none;
+    cursor: none;
+    }
+    
 }
 
