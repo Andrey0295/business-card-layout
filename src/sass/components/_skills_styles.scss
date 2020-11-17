@@ -1,11 +1,88 @@
+.skills-section{
+    margin-top: 90px;
+
+    .skills-title{
+        font-family: Khula, sans-serif;
+        font-weight: 700;
+font-size: 34px;
+line-height: 42px;
+        text-align: center;
+    }
+
+    .skills-description{
+        font-family: Khula, sans-serif;
+        
+font-size: 18px;
+line-height: 22px;
+        text-align: center;
+        margin-top: 50px;
+    }
+
+
+    .skills-list{
+       
+        margin-top: 80px;
+        @media screen and(min-width: 768px){
+            display: flex;
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media screen and(min-width: 768px){
+    .skil-item > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        }
+}
+
+
+@media screen and(min-width: 768px){
+    .skills-list{
+  
+        li{
+            margin-right: 90px;
+        }
+        
+        
+    }
+    .skills-list :last-child{
+        margin-right: 0px;
+    }
+}
+
+
+
+
+
 .main-skill-icon{
     width: 89px;
     height: 89px;
 }
+
+
 .star{
     width: 26px;
     height: 26px;
 }
 .white-star{
     fill: #e5e5e5;
+}
+
+
+.name-programm{
+    font-family: Khula, sans-serif;
+font-size: 14px;
+line-height: 17px;
+text-align: center;
+color: #828282;
+
+margin-top: 25px;
+}
+
+
+
+.stars-block{
+    margin-top: 41px;
 }
