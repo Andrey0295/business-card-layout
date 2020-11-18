@@ -1,0 +1,125 @@
+footer{
+    @media screen and(min-width: 768px){
+        margin-bottom: 123px;
+    }
+    @media screen and(max-width: 767px){
+        margin-bottom: 80px;
+    }
+}
+address{
+    display: flex;
+    justify-content: center;
+
+    
+}
+
+.footer-title{
+    text-align: center;
+    font-family: Khula, sans-serif;
+    font-weight: 700;
+font-size: 34px;
+line-height: 42px;
+    @media screen and(min-width: 768px){
+        margin-top: 210px;
+    }
+    @media screen and(max-width: 767px){
+        margin-top: 82px;
+    }
+}
+
+.call{
+    text-align: center;
+
+    font-family: Khula, sans-serif;
+    font-size: 18px;
+     line-height: 22px;
+
+     @media screen and(min-width: 768px){
+        margin-top: 20px;
+    }
+    @media screen and(max-width: 767px){
+        margin-top: 27px;
+    }
+}
+
+.button-container{
+    display: flex;
+    justify-content: center;
+
+    @media screen and(min-width: 768px){
+        margin-top: 30px;
+    }
+    @media screen and(max-width: 767px){
+        margin-top: 40px;
+    }
+
+   
+}
+
+.footer-button{
+    text-align: center;
+    color: #ffffff;
+    background-color: #070707;
+    border-radius: 50px;
+
+    font-family: Khula, sans-serif;
+font-size: 18px;
+line-height: 22px;
+
+
+@media screen and(min-width: 768px){
+   width: 180px;
+   height: 42px;
+}
+@media screen and(max-width: 767px){
+    width: 316px;
+    height: 42px;
+}
+        
+}
+
+
+.list-contacts{
+
+    display: flex;
+    justify-content: space-evenly;
+    @media screen and(min-width: 768px){
+       margin-top: 80px;
+       width: 35vw;
+     }
+     @media screen and(max-width: 767px){
+         margin-top: 48px;
+         width: 100vw;
+     }
+
+     svg{
+         width: 40px;
+         height: 40px;
+     }
+}
+
+.like-me-to{
+    text-align: center;
+    margin-top: 48px;
+    color: #828282;
+
+    @media screen and(min-width: 768px){
+       
+
+        font-family: Khula, sans-serif;
+font-size: 17px;
+line-height: 14px;
+
+
+      }
+      @media screen and(max-width: 767px){
+         
+
+          font-family: Khula, sans-serif;
+font-size: 18px;
+line-height: 22px;
+
+
+      }
+
+}
