@@ -81,6 +81,17 @@ header{
 
 
 .menu{
+    .link{
+        transition: color 500ms linear ;
+            &:hover{
+                color: #070707
+            }
+            &:focus{
+                color: #070707
+            }
+    }
+
+    
     @media screen and(min-width: 768px)  {
         display: flex;
         justify-content: space-around;
@@ -94,6 +105,7 @@ header{
        
 
     }
+
     @media screen and(max-width:767px){
         
         margin: 0;
@@ -113,7 +125,17 @@ header{
 
 
 
+
+
 .js-menu-button{
+    transition: color 500ms linear ;
+    &:hover{
+        color: #19ABE5
+    }
+    &:focus{
+        color: #19ABE5
+    }
+
     @media screen and(min-width: 768px)  {
         visibility: hidden;
         opacity: 0;

@@ -260,9 +260,7 @@ html, body {
 
 @media screen and (max-width: 767px) {
   .container {
-    min-width: 440px;
-    padding-right: 30px;
-    padding-left: 30px;
+    min-width: 210px;
   }
 }
 
@@ -283,6 +281,7 @@ p {
 
 .list {
   list-style: none;
+  padding: 0px;
 }
 
 .link {
@@ -301,6 +300,12 @@ p {
     font-size: 34px;
     line-height: 42px;
   }
+}
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 .is-open {
@@ -388,6 +393,19 @@ p {
   }
 }
 
+.menu .link {
+  -webkit-transition: color 500ms linear;
+  transition: color 500ms linear;
+}
+
+.menu .link:hover {
+  color: #070707;
+}
+
+.menu .link:focus {
+  color: #070707;
+}
+
 @media screen and (min-width: 768px) {
   .menu {
     display: -webkit-box;
@@ -406,6 +424,7 @@ p {
 @media screen and (max-width: 767px) {
   .menu {
     margin: 0;
+    margin-left: 26px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -420,6 +439,19 @@ p {
   .menu .menu-item:nth-child(-n+4) {
     margin-bottom: 68px;
   }
+}
+
+.js-menu-button {
+  -webkit-transition: color 500ms linear;
+  transition: color 500ms linear;
+}
+
+.js-menu-button:hover {
+  color: #19ABE5;
+}
+
+.js-menu-button:focus {
+  color: #19ABE5;
 }
 
 @media screen and (min-width: 768px) {
@@ -491,7 +523,6 @@ p {
 .about-me {
   background-color: #f6f6f6;
   text-align: center;
-  margin-bottom: 150px;
 }
 
 @media screen and (max-width: 767px) {
@@ -507,9 +538,6 @@ p {
 }
 
 @media screen and (max-width: 767px) {
-  .about-me-box {
-    min-width: 316px;
-  }
   .about-me-box h2 {
     padding-top: 80px;
   }
@@ -519,9 +547,6 @@ p {
 }
 
 @media screen and (min-width: 768px) {
-  .about-me-box {
-    min-width: 485px;
-  }
   .about-me-box h2 {
     padding-top: 120px;
   }
@@ -532,6 +557,81 @@ p {
 
 .about-me-box p {
   margin-top: 30px;
+}
+
+.skills-section {
+  margin-top: 90px;
+}
+
+.skills-section .skills-title {
+  font-family: Khula, sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+}
+
+.skills-section .skills-description {
+  font-family: Khula, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.skills-section .skills-list {
+  margin-top: 80px;
+}
+
+@media screen and (min-width: 768px) {
+  .skills-section .skills-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skil-item > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .skil-item > div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-top: 81px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .skills-list li {
+    margin-right: 90px;
+  }
+  .skills-list:last-child {
+    margin-right: 0px;
+  }
 }
 
 .main-skill-icon {
@@ -546,5 +646,244 @@ p {
 
 .white-star {
   fill: #e5e5e5;
+}
+
+.name-programm {
+  font-family: Khula, sans-serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  color: #828282;
+  margin-top: 25px;
+}
+
+.stars-block {
+  margin-top: 41px;
+}
+
+.portfolio-section {
+  background-color: #f6f6f6;
+}
+
+.portfolio-title {
+  font-family: Khula, sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+  text-align: center;
+  margin-top: 112px;
+}
+
+.portfolio-list {
+  margin-top: 47px;
+}
+
+.portfolio-list li:not(:first-child) {
+  margin-top: 100px;
+}
+
+.portfolio-link {
+  -webkit-transition: color 500ms linear;
+  transition: color 500ms linear;
+  display: block;
+  margin-top: 45px;
+  font-family: Khula, sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-decoration: underline;
+  color: #070707;
+}
+
+.portfolio-link:hover {
+  color: #19ABE5;
+}
+
+.portfolio-link:focus {
+  color: #19ABE5;
+}
+
+@media screen and (min-width: 768px) {
+  footer {
+    margin-bottom: 123px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  footer {
+    margin-bottom: 80px;
+  }
+}
+
+address {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.footer-title {
+  text-align: center;
+  font-family: Khula, sans-serif;
+  font-weight: 700;
+  font-size: 34px;
+  line-height: 42px;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-title {
+    margin-top: 210px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-title {
+    margin-top: 82px;
+  }
+}
+
+.call {
+  text-align: center;
+  font-family: Khula, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+@media screen and (min-width: 768px) {
+  .call {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .call {
+    margin-top: 27px;
+  }
+}
+
+.button-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+@media screen and (min-width: 768px) {
+  .button-container {
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .button-container {
+    margin-top: 40px;
+  }
+}
+
+.footer-button {
+  -webkit-transition: color 500ms linear;
+  transition: color 500ms linear;
+  -webkit-transition: background-color 500ms linear;
+  transition: background-color 500ms linear;
+  text-align: center;
+  color: #ffffff;
+  background-color: #070707;
+  border-radius: 50px;
+  font-family: Khula, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+  cursor: pointer;
+}
+
+.footer-button:hover {
+  color: #070707;
+  background-color: #ffffff;
+}
+
+.footer-button:focus {
+  color: #070707;
+  background-color: #ffffff;
+}
+
+@media screen and (min-width: 768px) {
+  .footer-button {
+    width: 180px;
+    height: 42px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer-button {
+    width: 316px;
+    height: 42px;
+  }
+}
+
+.list-contacts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+@media screen and (min-width: 768px) {
+  .list-contacts {
+    margin-top: 80px;
+    width: 35vw;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .list-contacts {
+    margin-top: 48px;
+    width: 100vw;
+  }
+}
+
+.list-contacts svg {
+  width: 40px;
+  height: 40px;
+}
+
+.contacts-item .link {
+  -webkit-transition: fill 500ms linear;
+  transition: fill 500ms linear;
+}
+
+.contacts-item .link:hover {
+  fill: #F042DE;
+}
+
+.contacts-item .link:focus {
+  fill: #F042DE;
+}
+
+.like-me-to {
+  text-align: center;
+  margin-top: 48px;
+  color: #828282;
+}
+
+@media screen and (min-width: 768px) {
+  .like-me-to {
+    font-family: Khula, sans-serif;
+    font-size: 17px;
+    line-height: 14px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .like-me-to {
+    font-family: Khula, sans-serif;
+    font-size: 18px;
+    line-height: 22px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

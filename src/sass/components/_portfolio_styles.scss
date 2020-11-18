@@ -22,6 +22,14 @@ margin-top: 112px;
 }
 
 .portfolio-link{
+    transition: color 500ms linear ;
+    &:hover{
+        color: #19ABE5
+    }
+    &:focus{
+        color: #19ABE5
+    }
+
     display: block;
     margin-top: 45px;
 
