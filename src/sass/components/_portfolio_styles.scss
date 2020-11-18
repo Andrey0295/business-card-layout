@@ -1,0 +1,36 @@
+.portfolio-section{
+    background-color: #f6f6f6;
+}
+.portfolio-title{
+    font-family: Khula, sans-serif;
+    font-weight: 700;
+font-size: 34px;
+line-height: 42px;
+
+text-align: center;
+margin-top: 112px;
+}
+
+.portfolio-list{
+    margin-top: 47px;
+   
+    li{
+        &:not(:first-child){
+            margin-top: 100px;
+        }
+    }
+}
+
+.portfolio-link{
+    display: block;
+    margin-top: 45px;
+
+    font-family: Khula, sans-serif;
+    font-weight: 500;
+font-size: 18px;
+line-height: 22px;
+text-align: center;
+
+    text-decoration: underline;
+    color: #070707
+}
